@@ -1,2 +1,7 @@
 .DS_Store
-.vscode
+
+
+iris.key
+Dockerfile
+docker-compose.yml
+docker-compose.yml

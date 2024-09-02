@@ -3,12 +3,11 @@
   <Document name="git-for-iris.ZPM">
     <Module>
       <Name>git-for-iris</Name>
-      <Version>0.3</Version>
+      <Version>0.3.0</Version>
       <Description>Native integration of the Git workflow with the InterSystems IRIS platform</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="SourceControl.Git.PKG"/>
-      <Resource Name="dc.PackageSample.PKG"/>
 
       <CSPApplication
         Path="/csp/user/sc"
@@ -22,10 +21,6 @@
 
       <Invokes>
         <Invoke Class="SourceControl.Git.Utils" Method="AddDefaultSettings"></Invoke>
-        <Invoke Class="SourceControl.Git.Utils" Method="AddPackageToSourceControl">
-          <Arg>dc.PackageSample</Arg>
-          <Arg>USER</Arg>
-        </Invoke>
       </Invokes>
     </Module>
   </Document>
